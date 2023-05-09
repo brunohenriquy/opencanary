@@ -24,7 +24,6 @@ def get_version(rel_path):
 requirements = [
     'Twisted==22.8.0',
     'pyasn1==0.4.5',
-    'cryptography==38.0.1',
     'simplejson==3.16.0',
     'requests==2.21.0',
     'zope.interface==5.0.0',
