@@ -16,11 +16,8 @@ COPY requirements.txt setup.py ./
 COPY bin /opencanary/bin
 
 RUN apt -y install libpq-dev gcc libffi-dev libssl-dev
-
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y --default-host arm-unknown-linux-gnueabihf
-
 ENV PATH="/root/.cargo/bin:${PATH}"
-
 RUN pip install cryptography==38.0.1 --no-binary :all:
 
 # Install the required dependencies
